@@ -5,3 +5,6 @@ Draw a [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Loca
 ### Demo anyone?
 [Have a look](https://dxcluster.ha8tks.hu/map/examples/)
 ### Usage example
+```bash
+L.maidenhead({color : 'rgba(255, 0, 0, 0.4)'}).addTo(map);
+```
