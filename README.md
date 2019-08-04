@@ -5,6 +5,11 @@ Draw a [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Loca
 ### Demo anyone?
 [Have a look](https://ha8tks.github.io/Leaflet.Maidenhead/examples/)
 ### Usage example
+Include the maidenhead javasript file:
+```bash
+<script type="text/javascript" src="https://ha8tks.github.io/Leaflet.Maidenhead/src/L.Maidenhead.js"></script>
+```
+After instantiating the map:
 ```bash
 L.maidenhead({
 	color : 'rgba(255, 0, 0, 0.4)'
