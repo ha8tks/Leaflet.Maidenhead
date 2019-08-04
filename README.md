@@ -6,7 +6,9 @@ Draw a [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Loca
 [Have a look](https://ha8tks.github.io/Leaflet.Maidenhead/examples/)
 ### Usage example
 ```bash
-L.maidenhead({color : 'rgba(255, 0, 0, 0.4)'}).addTo(map);
+L.maidenhead({
+	color : 'rgba(255, 0, 0, 0.4)'
+}).addTo(map);
 ```
 ### Options
 - **color**: The color of the lines and labels. Default `rgba(255, 0, 0, 0.4)` 
