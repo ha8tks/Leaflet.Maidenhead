@@ -7,7 +7,7 @@ Draw a [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Loca
 ### Usage example
 Include the maidenhead javasript file:
 ```bash
-<script type="text/javascript" src="https://ha8tks.github.io/Leaflet.Maidenhead/src/L.Maidenhead.js"></script>
+<script src="https://ha8tks.github.io/Leaflet.Maidenhead/src/L.Maidenhead.js"></script>
 ```
 After instantiating the map:
 ```bash
