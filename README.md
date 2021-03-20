@@ -1,4 +1,12 @@
 # Leaflet.Maidenhead
+
+### NOTE ON THIS FORK
+
+Simply adding a few tweaks to the fantastic original version:
+- Screenshot from a button
+- Crosshair inside each gridsquare
+- Topo map option
+
 ### What is this?
 Draw a [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Locator_System) lines and labels.
 >*"The Maidenhead Locator System (a.k.a. QTH Locator and IARU Locator) is a geographic co-ordinate system used by amateur radio operators to succinctly describe their locations"*
