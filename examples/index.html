@@ -30,7 +30,8 @@
   <script>
     var map = L.map('map').setView([46, 19], 5);
     L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+      attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
     }).addTo(map);
     L.maidenhead({color : 'rgba(255, 0, 0, 0.4)'}).addTo(map);
   </script>
