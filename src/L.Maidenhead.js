@@ -39,8 +39,8 @@ L.Maidenhead = L.LayerGroup.extend({
 		var lat_cor =    new Array(0 ,8 ,8 ,8 ,10,14,6 ,8 ,8 ,8 ,1.4 ,2.5 ,3   ,3.5 ,4   ,4    ,3.5  ,3.5  ,1.47    ,1.8     ,1.6      );
 		var bounds = map.getBounds();
 		var zoom = map.getZoom();
-		var unit = d3[zoom];
-		var lcor = lat_cor[zoom];
+		var unit = d3[Math.round(zoom)];
+		var lcor = lat_cor[Math.round(zoom)];
 		var w = bounds.getWest();
 		var e = bounds.getEast();
 		var n = bounds.getNorth();
@@ -68,7 +68,7 @@ L.Maidenhead = L.LayerGroup.extend({
 	_getLabel: function(lon,lat) {
 	  var title_size = new Array(0 ,10,12,16,20,26,12,16,24,36,12  ,14  ,20  ,36  ,60  ,12   ,20   ,36   ,8   ,12      ,24       );
 	  var zoom = map.getZoom();
-	  var size = title_size[zoom]+'px';
+	  var size = title_size[Math.round(zoom)]+'px';
 	  var title = '<span style="cursor: default;"><font style="color:'+this.options.color+'; font-size:'+size+'; font-weight: 900; ">' + this._getLocator(lon,lat) + '</font></span>';
       var myIcon = L.divIcon({className: 'my-div-icon', html: title});
       var marker = L.marker([lat,lon], {icon: myIcon}, clickable=false);
@@ -83,7 +83,7 @@ L.Maidenhead = L.LayerGroup.extend({
       var locator = "";
       var x = lon;
       var y = lat;
-      var precision = d4[map.getZoom()];
+      var precision = d4[Math.round(map.getZoom())];
       while (x < -180) {x += 360;}
       while (x > 180) {x -=360;}
       x = x + 180;
